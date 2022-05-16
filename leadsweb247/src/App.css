@@ -1,0 +1,235 @@
+.App {
+ 
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.Apps-logo {
+
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+
+  background-color: black;
+  padding: 15px 30px;
+  border: 2px solid brown;
+}
+.Com-logo{
+ 
+ display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+  animation: Com-logo 2s ease-in-out;
+}
+.main{
+
+}
+
+.intro{
+  padding: 40px 70px;
+  font-family: serif;
+  line-height: 150%;
+  
+}
+
+
+.container{
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+
+}
+
+.box{
+  flex:1;
+  background-color: antiquewhite;
+  font-family: serif;
+  line-height: 150%;
+ 
+
+  padding: 20px;
+  height: 400px;
+  weight: 100%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+ -webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+cursor: pointer;
+}
+.box +.box{
+margin-left: 2%;
+
+}
+.box:hover {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+ 
+}
+
+.box1{
+  flex:1;
+  background-color: antiquewhite;
+  font-family: serif;
+  text-indent: 50px;
+  line-height: 150%;
+  text-align: center;
+  padding: 20px;
+ 
+  weight: 100%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+ -webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+cursor: pointer;
+}
+
+.box1:hover {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+ 
+}
+
+.container .box img{
+  width: 70%;
+  height: 60%;
+}
+
+.footer{
+ 
+ display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
+
+}
+@keyframes Com-logo{
+  0%{
+    transform: translateY(-100%);
+  }
+}
+
+nav ul li{
+  
+  margin: 10px 20px;
+  display: inline-block;
+  font-weight: 200;
+  font-size: calc(10px + 2vmin);
+  font-family: serif;
+
+}
+ul li {
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid chocolate;;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: arvo;
+}
+
+li a {
+  color: white;
+}
+
+li a:hover {
+  color: hsl(36, 95%, 48%);
+}
+
+.dropdown li a{
+  color: rgb(20, 15, 15);
+}
+.dropdown li a:hover{
+  color: hsl(36, 95%, 48%);
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: white;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 300px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 5px 5px 5px -3px hsl(36, 95%, 48%);
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid white;
+  transition: all 0.3s ease;
+
+}
+
+a {
+
+  text-decoration: none;
+
+  &:hover {
+      color: #3CA0E7;
+  }
+
+}
+
+ul li ul li a { transition: all 0.5s ease; }
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
